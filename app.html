@@ -148,5 +148,189 @@ tr:nth-child(even) {
   </div>
 </div>
 <!-- Gallery -->
+
+<title>Footer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="footer">
+      <div class="heading">
+        <h2>Faraz<sup>™</sup></h2>
+      </div>
+      <div class="content">
+        <div class="services">
+          <h4>Services</h4>
+          <p><a href="#">App development</a></p>
+          <p><a href="#">Web development</a></p>
+          <p><a href="#">DevOps</a></p>
+          <p><a href="#">Web designing</a></p>
+        </div>
+        <div class="social-media">
+          <h4>Social</h4>
+          <p>
+            <a href="#"
+              ><i class="fab fa-linkedin"></i> Linkedin</a
+            >
+          </p>
+          <p>
+            <a href="#"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/farazc60"
+              ><i class="fab fa-github"></i> Github</a
+            >
+          </p>
+          <p>
+            <a href="https://www.facebook.com/codewithfaraz"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+          </p>
+          <p>
+            <a href="https://www.instagram.com/codewithfaraz"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </p>
+        </div>
+        <div class="links">
+          <h4>Quick links</h4>
+          <p><a href="#">Home</a></p>
+          <p><a href="#">About</a></p>
+          <p><a href="#">Blogs</a></p>
+          <p><a href="#">Contact</a></p>
+        </div>
+        <div class="details">
+          <h4 class="address">Address</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur <br />
+            adipisicing elit. Cupiditate, qui!
+          </p>
+          <h4 class="mobile">Mobile</h4>
+          <p><a href="#">+91-12225*****</a></p>
+          <h4 class="mail">Email</h4>
+          <p><a href="#">farazc60@gmail.com</a></p>
+        </div>
+      </div>
+      <footer>
+        <hr />
+        © 2022 codewithFaraz.
+      </footer>
+    </div>
+  </body>
+</html>
+Read Also
+Crafting a User-Friendly Hotel Booking Website using HTML, CSS, and JavaScript.jpg
+Crafting a User-Friendly Hotel Booking Website using HTML, CSS, and JavaScript
+Step 2 (CSS Code):
+
+
+Once the basic HTML structure of the footer is in place, the next step is to add styling to the footer using CSS. CSS allows us to control the visual appearance of the footer, including things like  layout, color, and typography.
+
+Next, we will create our CSS file. In this file, we will use some basic CSS rules to create our responsive footer.
+
+The first part, * { margin: 0; padding: 0; box-sizing: border-box; }, sets the default margin and padding to 0 for all elements on the page, and ensures that the box-sizing property is set to border-box, which includes the padding and border in the element's total width and height.
+
+The .footer class styles the footer element itself. It sets the background color to black, the text color to white, and positions it at the bottom of the page with position: fixed; bottom: 0; left: 0;. The width is set to 100% of the viewport with width: 100%;.
+
+
+The .heading class is a child of the footer and is styled to have white text, a maximum width of 1010 pixels, a width of 90%, text in uppercase, centered with margin: 0 auto;, and a 3-rem margin below the heading.
+
+The .content class is also a child of the footer, and is set to be a flex container with items spaced evenly with justify-content: space-evenly;. All paragraph elements inside the content div will have a 1.3-rem margin below it. All anchor tags inside the content div will have white text with no underline. When hovering over anchor tags in the content div, a 1-pixel solid border will appear underneath it. All h4 elements in the content div will have a 1.3-rem margin below it and a font size of 19 pixels.
+
+The footer element has its text centered with text-align: center; and a 2-rem margin below it. It also has a horizontal rule below it with a 2-rem margin on both sides with footer hr { margin: 2rem 0; }.
+
+Finally, there are three media queries that adjust the style of the footer depending on the size of the device screen. When the device has a maximum width of 767 pixels, the .content class becomes a column and the font size is set to 14 pixels. Additionally, the footer's position property is unset. When the device width is between 768 pixels and 1024 pixels, both the .content and .footer class' font sizes are set to 14 pixels. When the device is in landscape mode and has a maximum height of 500 pixels, the footer's position property is unset.
+
+
+This will give our responsive footer an upgraded presentation. Create a CSS file with the name of styles.css and paste the given codes into your CSS file. Remember that you must create a file with the .css extension.
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: black;
+  color: #fefefe;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .heading {
+  color: #fefefe;
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer hr {
+  margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .footer {
+    position: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
+}
+
 </body>
 </html>
